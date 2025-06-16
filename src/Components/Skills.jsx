@@ -5,7 +5,7 @@ const skills = [
   { name: "React", img: "/skills/react.png" },
   { name: "Tailwind", img: "/skills/tailwind.png" },
   { name: "Linux", img: "/skills/linux.png" },
-
+  // Add more as needed
 ];
 
 const Skills = () => {

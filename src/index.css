@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* src/index.css */
+.clip-left {
+  clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+}
