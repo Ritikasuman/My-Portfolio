@@ -13,11 +13,9 @@ import TimelinePath from "./Components/TimelinePath";
 function App() {
   return (
     <>
-      <div className="h-auto w-screen bg-[url('../assets/bg.jpg')] bg-cover bg-center relative">
+      <div className="bg-black">
         <Nav />
         <Intro />
-      </div>
-
       <AboutMe />
       <Skills />
       <Experience />
@@ -25,6 +23,7 @@ function App() {
       <Extra />
       <Contact />
       <Footer />
+       </div>
     </>
   );
 }
