@@ -1,32 +1,87 @@
-const skills = [
-  { name: "HTML", img: "/skills/html.png" },
-  { name: "CSS", img: "/skills/css.png" },
-  { name: "JavaScript", img: "/skills/javascript.png" },
-  { name: "React", img: "/skills/react.png" },
-  { name: "Tailwind", img: "/skills/tailwind.png" },
-  { name: "Linux", img: "/skills/linux.png" },
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
+const skills = [
+  { name: "HTML", img: "../../assets/html.png" },
+  { name: "CSS", img: "../../assets/css-3.png" },
+  { name: "JavaScript", img: "../../assets/js.png" },
+  { name: "React", img: "../../assets/physics.png" },
+  { name: "Tailwind", img: "../../assets/Tailwind.png" },
+  { name: "Linux", img: "../../assets/linux.png" },
+  { name: "Java", img: "../../assets/java.png" },
+  { name: "Github", img: "../../assets/github.png" },
+  { name: "Visual studio", img: "../../assets/logo.png" },
+  { name: "C", img: "../../assets/letter-c.png" },
+  { name: "MySql", img: "../../assets/mysql.png" },
+  { name: "C++", img: "../../assets/c-.png" },
+
+
+  // Add more as needed
 ];
 
 const Skills = () => {
+  const containerRef = useRef(null);
+  let oldX = 0, oldY = 0;
+
+  useEffect(() => {
+    const container = containerRef.current;
+
+    const handleMouseMove = (e) => {
+      oldX = e.clientX;
+      oldY = e.clientY;
+    };
+
+    container.addEventListener("mousemove", handleMouseMove);
+
+    container.querySelectorAll(".media").forEach((media) => {
+      const img = media.querySelector("img");
+
+      media.addEventListener("mouseenter", (e) => {
+        const deltaX = e.clientX - oldX;
+        const deltaY = e.clientY - oldY;
+
+        gsap.to(img, {
+          x: deltaX * 3,
+          y: deltaY * 3,
+          rotate: (Math.random() - 0.5) * 30,
+          yoyo: true,
+          repeat: 1,
+          duration: 0.4,
+          ease: "power1.inOut",
+        });
+
+        gsap.to(img, {
+          x: 0,
+          y: 0,
+          duration: 0.5,
+          delay: 0.4,
+        });
+      });
+    });
+
+    return () => container.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
-    <section className="w-full bg-black text-white py-12 px-6 md:px-16" id="skills">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold  mb-8">
-          Skills
-        </h2>
-        <div className="flex space-x-6 overflow-x-auto ">
+    <section
+      ref={containerRef}
+      className="w-full h-[70vh] bg-black text-white py-12 px-6 md:px-16"
+      id="skills"
+    >
+      <div className="w-[90%]  bg-black-100 mx-auto">
+        <h2 className="text-5xl font-semibold mb-8">Skills</h2>
+        <div className="flex flex-wrap  gap-y-[7vh] gap-x-[7vh]">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="min-w-[120px] bg-white-100 p-4 rounded-xl shadow hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+              className="media min-w-[120px] bg-gray-900 p-4 rounded-xl shadow hover:scale-105 transition-transform duration-300 flex flex-col items-center"
             >
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="w-16 h-16 object-contain mb-2"
+                className="w-30 h-25 object-contain mb-2 pointer-events-none"
               />
-              <p className="text-sm font-medium text-gray-700">{skill.name}</p>
+              <p className="text-sm font-medium text-gray-500">{skill.name}</p>
             </div>
           ))}
         </div>

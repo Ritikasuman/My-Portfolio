@@ -2,12 +2,12 @@ const AboutMe = () => {
   return (
    <section
   id="about"
-className="w-full mt-20 mb-16 py-5 px-20 text-white bg-white/18 backdrop-blur-lg "
+className="w-full mt-20  py-5 px-20 text-white bg-white/18 backdrop-blur-lg "
 
            >
 
       <div className=" pr-10 pl-10 ">
-        <h2 className="text-3xl text-4xl font-semibold mb-5">
+        <h2 className="text-4xl font-semibold mb-5">
          Who I Am
         </h2>
         <p className="text-base md:text-lg  leading-relaxed">

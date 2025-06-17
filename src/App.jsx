@@ -13,18 +13,19 @@ import TimelinePath from "./Components/TimelinePath";
 function App() {
   return (
     <>
-      <div className="bg-[url('../../assets/bg5.png')]">
+      <div className="bg-black">
 
         <Nav />
         <Intro />
-      <AboutMe />
+         <AboutMe />
+         </div>
       <Skills />
       <Experience />
       <Work />
       <Extra />
       <Contact />
       <Footer />
-       </div>
+    
     </>
   );
 }

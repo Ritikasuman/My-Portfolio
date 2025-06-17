@@ -4,3 +4,10 @@
 .clip-left {
   clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
 }
+
+
+.mwg_effect000 .medias img {
+  border-radius: 8px;
+  pointer-events: none;
+  will-change: transform;
+}
