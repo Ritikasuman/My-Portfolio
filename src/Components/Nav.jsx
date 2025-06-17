@@ -2,7 +2,7 @@ import img from "../../assets/Ritika.png";
 
 const Nav = () => {
   return (
-    <div className="flex bg-zinc-100/10 text-white p-3 items-center gap-[80vh] backdrop-blur-sm">
+    <div className="flex bg-zinc-100/10 text-white p-3 items-center gap-[80vh] backdrop-blur-lg">
       <div className="">
         <img src={img} alt="Sign" className="w-60 h-12 rounded-full" />
       </div>

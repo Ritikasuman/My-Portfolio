@@ -13,7 +13,8 @@ import TimelinePath from "./Components/TimelinePath";
 function App() {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-[url('../../assets/bg5.png')]">
+
         <Nav />
         <Intro />
       <AboutMe />

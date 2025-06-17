@@ -5,21 +5,21 @@ const skills = [
   { name: "React", img: "/skills/react.png" },
   { name: "Tailwind", img: "/skills/tailwind.png" },
   { name: "Linux", img: "/skills/linux.png" },
-  // Add more as needed
+
 ];
 
 const Skills = () => {
   return (
-    <section className="w-full bg-white py-12 px-6 md:px-16" id="skills">
+    <section className="w-full bg-black text-white py-12 px-6 md:px-16" id="skills">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">
+        <h2 className="text-3xl md:text-4xl font-semibold  mb-8">
           Skills
         </h2>
-        <div className="flex space-x-6 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400">
+        <div className="flex space-x-6 overflow-x-auto ">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="min-w-[120px] bg-gray-100 p-4 rounded-xl shadow hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+              className="min-w-[120px] bg-white-100 p-4 rounded-xl shadow hover:scale-105 transition-transform duration-300 flex flex-col items-center"
             >
               <img
                 src={skill.img}
