@@ -7,7 +7,7 @@ className="w-full mt-20  py-8 px-20 text-white bg-white/18 backdrop-blur-lg "
            >
 
       <div className=" pr-10 pl-15 ">
-        <h2 className="text-4xl font-mono mb-5">
+        <h2 className="text-5xl font-mono mb-5">
          Who I Am
         </h2>
         <p className="text-xl text-gray-300 font-poppins font-thin leading-relaxed">

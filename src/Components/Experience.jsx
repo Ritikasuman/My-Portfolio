@@ -28,12 +28,12 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="w-full bg-black py-12 border-t border-white h-[65vh]" id="experience">
+    <section className="w-full bg-black py-12 border-t border-white h-[70vh]     " id="experience">
       <div className="mr-[10%] ml-[8%] space-x-10">
         <h2 className="text-5xl text-white font-mono mb-20">
           Experience
         </h2>
-        <div className="flex gap-10">
+        <div className="bg-[url('../../assets/vedio.png')] flex gap-10">
           {experiences.map((exp, index) => (
             <div
   key={index}
