@@ -2,6 +2,7 @@
 import { PiGithubLogoThin } from "react-icons/pi";
 import { PiLinkedinLogoThin } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
+import Tilt from "react-parallax-tilt";
 const Intro = () => {
   return (
     <div
@@ -34,8 +35,18 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="right w-[45%] flex items-center justify-center">
-        <div className="w-[55%] h-[70%] bg-[url('../../assets/ProfileImg.jpg')] bg-cover bg-center rounded-[10%] hover:scale-110 transition-transform duration-300 "></div>
+      <div className="ml-20 right w-[38%] h-full flex items-center justify-center">
+        <Tilt
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          glareEnable={true}
+          glareMaxOpacity={0.0}
+          scale={1.05}
+          transitionSpeed={1000}
+          className="w-[55%] h-[70%]"
+        >
+          <div className="w-full h-full bg-[url('../../assets/ProfileImg.jpg')] bg-cover bg-center rounded-[10%] hover:scale-110 transition-transform duration-300"></div>
+        </Tilt>
       </div>
     </div>
   );

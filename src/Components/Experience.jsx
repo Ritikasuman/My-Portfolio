@@ -1,3 +1,6 @@
+import Tilt from 'react-parallax-tilt';
+
+
 const experiences = [
   {
     title: "ReactJS Developer Intern | Vidhaalay Transforming Future LLP",
@@ -33,18 +36,29 @@ const Experience = () => {
         <h2 className="text-5xl text-white font-mono mb-10">
           EXPERIENCE
         </h2>
-        <div className="bg-[url('../../assets/vedio.png')] flex gap-10">
+        <div className="bg-black flex gap-10">
          {experiences.map((exp, index) => (
-  <div
+  <Tilt
     key={index}
-    style={{ transform: `translateY(${index * 60}px)` }} // each card shifts down 20px more
-    className=" p-6 rounded-xl  bg-white/35 backdrop-blur-lg hover:scale-110 transition-transform duration-300 w-[30%]"
+    tiltMaxAngleX={15}
+    tiltMaxAngleY={15}
+    glareEnable={true}
+    glareMaxOpacity={0.0}
+    scale={1.05}
+    transitionSpeed={1000}
+    className="w-[30%]"
   >
-    <h3 className="text-3xl font-popins font-thin text-white">{exp.title}</h3>
-    <p className="font-popins font-thin text-gray-200 mb-2">{exp.duration}</p>
-    <p className="font-popins font text-gray-200  border-t border-solid border-gray-300 pt-4 mt-4">{exp.description}</p>
-  </div>
+    <div
+      style={{ transform: `translateY(${index * 60}px)` }}
+      className="p-6 w-[90%] h-[100%] rounded-xl bg-white/35 backdrop-blur-lg "
+    >
+      <h3 className="text-3xl font-popins font-thin text-white">{exp.title}</h3>
+      <p className="font-popins font-thin text-gray-200 mb-2">{exp.duration}</p>
+      <p className="font-popins font text-gray-200 border-t border-solid border-gray-300 pt-4 mt-4">{exp.description}</p>
+    </div>
+  </Tilt>
 ))}
+
         </div>
       </div>
     </section>
