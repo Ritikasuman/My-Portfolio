@@ -1,4 +1,8 @@
 import Mintlogo from '../../assets/Mintcode.png';
+import Placement from '../../assets/placement.jpg'; // ✅ Make sure this exists
+import Debate from '../../assets/debate.jpg';         // ✅ And this
+// import Certificates from '../../assets/Certificates.png'; // ✅ And this too
+
 const extras = [
   {
     title: "Event Head | MintCode",
@@ -22,44 +26,45 @@ const extras = [
     img: Debate,
   },
   {
-    title: "Certifications",
+    title: "Certificate",
+    date: "2022 – Present",
     description:
-      "Completed online courses in HTML, CSS, JavaScript, and Git from platforms like freeCodeCamp and Coursera.",
-    img: Certificates ,
-  },
+      "Earned following certificates throughout my learning journey ",
+    img: Debate,
+  }
   
 ];
 
 const ExtraInfo = () => {
   return (
-    <section className="w-full bg-black " id="extra-info">
+    <section className="w-full bg-black h-[70vh] " id="extra-info">
       <div className="mr-[10%] ml-[8%] ">
         <h2 className="text-5xl font-mono text-white mb-8">
           More 
         </h2>
-        <div className="flex  gap-6">
+        <div className="flex  gap-[10%]">
           {extras.map((item, index) => (
            <div
   key={index}
-  className="group relative  w-64 h-auto overflow-hidden rounded-xl  shadow hover:shadow-xl transition-all duration-500"
+  className="group relative  w-64 h-40% overflow-hidden rounded-xl  shadow hover:shadow-xl transition-all duration-500"
 >
   {/* Sliding Reveal Background */}
-  <div className="absolute inset-0 bg-gray-100 translate-y-full group-hover:translate-y-0 transition-transform duration-500 opacity-30 z-0"></div>
+  <div className="absolute  gap-x-50 inset-0 bg-gray-100 translate-y-full group-hover:translate-y-0 transition-transform duration-500 opacity-30 z-0"></div>
 
   {/* Foreground Content */}
-  <div className="relative h-full z-10 p-6 bg-neutral-900/10 border border-dotted border-white/30 rounded-xl text-white">
-    <div className=" gap-4 mb-4">
-      <div className="w-full h-full"> 
-        <img src={item.img} alt="icon" className="object-contain bg-white" />
+  <div className="relative w-[100%] h-[55vh] z-10 p-6 bg-neutral-900/10 border-[2px] border-dotted border-white/30 rounded-xl text-white ">
+    <div className=" gap-10 mb-4">
+      <div className=" flex items-center justify-center mb-3"> 
+        <img src={item.img} alt="icon" className="object-contain bg-white w-[40vh] h-[20vh]" />
         </div>
       <div>
-        <h3 className="text-xl font-semibold">{item.title}</h3>
+        <h3 className="text-xl font-thin pb-2 ">{item.title}</h3>
         {item.date && (
           <p className="text-xs text-white/60">{item.date}</p>
         )}
       </div>
     </div>
-    <p className="text-sm leading-relaxed text-white/90">
+    <p className="text-sm leading-relaxed text-gray-300">
       {item.description}
     </p>
   </div>
