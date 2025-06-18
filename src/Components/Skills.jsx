@@ -69,7 +69,7 @@ const Skills = () => {
       id="skills"
     >
       <div className="w-[90%]  bg-black-100 mx-auto">
-        <h2 className="text-5xl font-mono mb-8">Skills</h2>
+        <h2 className="text-5xl font-mono mb-8">SKILLS</h2>
         <div className=" flex flex-wrap  gap-y-[7vh] gap-x-[7vh]">
           {skills.map((skill, index) => (
             <div

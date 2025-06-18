@@ -28,25 +28,23 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="w-full bg-black py-12 border-t border-white h-[70vh]     " id="experience">
+    <section className="w-full bg-black py-12 border-t border-white h-[85vh] " id="experience">
       <div className="mr-[10%] ml-[8%] space-x-10">
-        <h2 className="text-5xl text-white font-mono mb-20">
-          Experience
+        <h2 className="text-5xl text-white font-mono mb-10">
+          EXPERIENCE
         </h2>
         <div className="bg-[url('../../assets/vedio.png')] flex gap-10">
-          {experiences.map((exp, index) => (
-            <div
-  key={index}
-  className={`bg-white/35 p-6 rounded-xl backdrop-blur-lg hover:scale-110 transition-transform duration-300 w-[30%]  ${
-    index % 2 === 0 ? 'translate-y-10' : '-translate-y-10'
-  }`}
->
-
-              <h3 className="text-3xl font-popins font-thin  text-white">{exp.title}</h3>
-              <p className="font-popins font-thin text-gray-200 mb-2">{exp.duration}</p>
-              <p className=" font-popins font-thin text-white ">{exp.description}</p>
-            </div>
-          ))}
+         {experiences.map((exp, index) => (
+  <div
+    key={index}
+    style={{ transform: `translateY(${index * 60}px)` }} // each card shifts down 20px more
+    className=" p-6 rounded-xl  bg-white/35 backdrop-blur-lg hover:scale-110 transition-transform duration-300 w-[30%]"
+  >
+    <h3 className="text-3xl font-popins font-thin text-white">{exp.title}</h3>
+    <p className="font-popins font-thin text-gray-200 mb-2">{exp.duration}</p>
+    <p className="font-popins font text-gray-200  border-t border-solid border-gray-300 pt-4 mt-4">{exp.description}</p>
+  </div>
+))}
         </div>
       </div>
     </section>

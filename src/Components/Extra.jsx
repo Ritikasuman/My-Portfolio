@@ -1,37 +1,64 @@
 const extras = [
   {
-    title: "Tools & Platforms",
-    description: "Comfortable with VS Code, Git & GitHub, Figma for basic design, and terminal-based workflows.",
+    title: "Event Head | MintCode",
+    date: "2024 – Present",
+    description:
+      "Organized and currently managing technical events and workshops.",
+    img: "🧠",
   },
   {
-    title: "Soft Skills",
-    description: "Good at time management, learning independently, and approaching problems with a practical mindset.",
+    title: "Placement Coordinator | Global Institute of Technology",
+    date: "2022 – Present",
+    description:
+      "Helped in organizing events like hackathons, alumni sessions, and placement drives.",
+    img: "🎯",
+  },
+  {
+    title: "Debate | Inter-college Competition, Jaipur",
+    date: "2022 – Present",
+    description:
+      "Represented college in debate competitions across Jaipur, enhancing communication and public speaking.",
+    img: "🎤",
   },
   {
     title: "Certifications",
-    description: "Completed online courses in HTML, CSS, JavaScript, and Git from platforms like freeCodeCamp and Coursera.",
+    description:
+      "Completed online courses in HTML, CSS, JavaScript, and Git from platforms like freeCodeCamp and Coursera.",
+    img: "📜",
   },
   {
-    title: "Interests",
-    description: "Interested in UI design, open-source contributions, and learning about system-level tools and commands in Linux.",
+    title: "Soft Skills",
+    description:
+      "Good at time management, learning independently, and approaching problems with a practical mindset.",
+    img: "💡",
   },
 ];
 
 const ExtraInfo = () => {
   return (
-    <section className="w-full bg-black py-12 px-6 md:px-16" id="extra-info">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-8">
-          Extra Information
+    <section className="w-full bg-black " id="extra-info">
+      <div className="mr-[10%] ml-[7%] ">
+        <h2 className="text-5xl font-mono text-white mb-8">
+          More 
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="flex  gap-6">
           {extras.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300"
+              className="bg-gray-900 border-5 border-dotted-100 border-white/30 backdrop-blur-md text-white p-6 rounded-xl shadow hover:shadow-xl transition-all duration-500"
             >
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="text-3xl">{item.img}</div>
+                <div>
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  {item.date && (
+                    <p className="text-xs text-white/60">{item.date}</p>
+                  )}
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed text-white/90">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
