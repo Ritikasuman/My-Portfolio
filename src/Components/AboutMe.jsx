@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
    <section
   id="about"
-className="w-full mt-20  py-8 px-20 text-white bg-white/18 backdrop-blur-lg "
+className="w-full mt-20  py-8 px-20 text-white bg-white/18 backdrop-blur-lg  " 
 
            >
 

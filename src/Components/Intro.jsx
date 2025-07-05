@@ -7,11 +7,11 @@ const Intro = () => {
   return (
     <div
       className="flex h-[60vh] mt-15 mb-10 w-[90%] ml-[5%] rounded-xl mr-[3%]
-           bg-zinc-500/10 text-white backdrop-blur-sm shadow-xl shadow-zinc-500/50"
+           bg-zinc-500/1 text-white backdrop-blur shadow-xl shadow-zinc-500/30   hover:scale-102 transition-transform duration-300"
     >
       <div className="left w-[55%] flex flex-col justify-center pr-10 pl-16 ">
         <h1 className="text-[7vh]  font-mono">Ritika Suman</h1>
-        <h4 className="text-[5vh]  font-mono  ">FULL STACK DEVELOPER</h4>
+        <h4 className="text-[5vh]  font-mono text-cyan-300 ">FULL STACK DEVELOPER</h4>
         <p className="mt-4 text-xl font-poppins font-thin mb-3 text-gray-300">
           Hey, I’m Ritika Suman. I’m new to web development and learning through
           practice - building websites, exploring design ideas, and refining my

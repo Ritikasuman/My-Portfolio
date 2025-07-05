@@ -65,7 +65,7 @@ const Skills = () => {
   return (
     <section
       ref={containerRef}
-      className="w-full h-[70vh] bg-black text-white py-12 px-16"
+      className="w-full h-[70vh] bg-black  text-white py-12 px-16" style={{ backgroundImage: "url('./assets/skulls.png')" }}
       id="skills"
     >
       <div className="w-[90%]  bg-black-100 mx-auto">
