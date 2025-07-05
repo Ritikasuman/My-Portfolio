@@ -79,9 +79,9 @@ const Skills = () => {
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="w-35 h-25 object-contain mb-2 pointer-events-none"
+                className="w-35 h-25 object-contain mb-2 pointer-events-none "
               />
-              <p className="text-sm font-medium text-gray-300">{skill.name}</p>
+              <p className="text-sm font-medium text-white-300">{skill.name}</p>
             </div>
           ))}
         </div>
