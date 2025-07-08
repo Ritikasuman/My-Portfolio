@@ -37,7 +37,7 @@ const extras = [
 
 const ExtraInfo = () => {
   return (
-    <section className="w-full bg-black h-[70vh] " id="extra-info">
+    <section className="w-full  h-[70vh] " id="extra-info">
       <div className="mr-[10%] ml-[8%] ">
         <h2 className="text-5xl font-mono text-white mb-8">
           More 

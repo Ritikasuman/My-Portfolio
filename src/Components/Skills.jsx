@@ -65,7 +65,7 @@ const Skills = () => {
   return (
     <section
       ref={containerRef}
-      className="w-full h-[70vh] bg-black  text-white py-12 px-16" style={{ backgroundImage: "url('./assets/skulls.png')" }}
+      className="w-full h-[70vh] text-white py-12 px-16" 
       id="skills"
     >
       <div className="w-[90%]  bg-black-100 mx-auto">
@@ -74,7 +74,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="media min-w-[150px] bg-white/35 p-4 rounded-xl shadow hover:scale-105 transition-transform duration-300 flex flex-col items-center backddrop-blur-lg"
+              className="media min-w-[150px] bg-white/10 backddrop-blur-xl border border-white/20  p-4 rounded-xl shadow hover:scale-105 transition-transform duration-300 flex flex-col items-center "
             >
               <img
                 src={skill.img}

@@ -63,7 +63,7 @@ const Experience = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-screen bg-black py-20 border-t border-cyan-500/30 overflow-hidden"style={{ backgroundImage: "url('./assets/bg99.png')" }}
+      className="relative w-full min-h-screen py-20 border-t border-cyan-500/30 overflow-hidden"
       id="experience"
     >
     \

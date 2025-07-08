@@ -7,25 +7,32 @@ import Work from "./Components/Work";
 import Extra from "./Components/Extra";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-
 import TimelinePath from "./Components/TimelinePath";
 
 function App() {
   return (
     <>
-      <div className="" style={{ backgroundImage: "url('./assets/bg99.png')" }}>
-
+      <div
+        className="app-wrapper"
+        style={{
+          backgroundImage: "url('./assets/bg99.png')",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* All sections scroll on top of this */}
         <Nav />
         <Intro />
-         <AboutMe />
-         </div>
-      <Skills />
-      <Experience />
-      <Work />
-      <Extra />
-      <Contact />
-      <Footer />
-    
+        <AboutMe />
+        <Skills />
+        <Experience />
+        <Work />
+        <Extra />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }

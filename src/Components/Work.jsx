@@ -28,7 +28,7 @@ const projects = [
 
 const Work = () => {
   return (
-    <section className="w-full bg-black pb-20 pt-20 h-60vh" id="work">
+    <section className="w-full pb-20 pt-20 h-60vh" id="work">
       <div className=" mr-[10%] ml-[8%]">
         <h2 className="text-5xl font-mono text-white mb-10">
         PROJECTS

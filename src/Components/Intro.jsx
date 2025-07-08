@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div
       className="flex h-[60vh] mt-15 mb-10 w-[90%] ml-[5%] rounded-xl mr-[3%]
-           bg-cyan-800/20 text-black backdrop-blur shadow-xl shadow-black-800/30   hover:scale-106 transition-transform duration-800"
+           bg-cyan-800/20 text-black backdrop-blur-xl shadow-xl shadow-black-800/30 border border-white/20   hover:scale-106 transition-transform duration-800"
     >
       <div className="left w-[55%] flex flex-col justify-center pr-10 pl-16 ">
         <h1 className="text-[7vh]  font-mono">Ritika Suman</h1>
