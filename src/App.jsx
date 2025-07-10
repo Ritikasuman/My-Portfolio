@@ -15,7 +15,7 @@ function App() {
       <div
         className="app-wrapper"
         style={{
-          backgroundImage: "url('./assets/bg99.png')",
+          backgroundImage: "url('./assets/b5.jpg')",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           backgroundRepeat: "no-repeat",

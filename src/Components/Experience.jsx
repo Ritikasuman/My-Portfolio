@@ -106,33 +106,16 @@ const Experience = () => {
         {/* Enhanced Title */}
         <div className="text-center mb-20">
           <h2
-            className={`text-7xl md:text-8xl font-bold bg-gradient-to-r from-white via-cyan-200 to-white bg-clip-text text-transparent mb-6 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`text-7xl md:text-8xl font-bold bg-gradient-to-r from-white via-cyan-200 to-white bg-clip-text text-transparent mb-6 transition-all duration-1000`}
             style={{
-              fontFamily: "system-ui, -apple-system, sans-serif",
               letterSpacing: "-0.02em",
-              // textShadow: "0 0 40px rgba(34, 211, 238, 0.3)",
-              // filter: "drop-shadow(0 0 20px rgba(34, 211, 238, 0.5))",
             }}
           >
             EXPERIENCE
           </h2>
-          <div
-            className={`w-32 h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent mx-auto rounded-full transition-all duration-1000 delay-300 ${
-              isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
-            }`}
-            style={{
-              boxShadow: "0 0 20px rgba(34, 211, 238, 0.8)",
-            }}
-          />
-          <p
-            className={`text-gray-300 text-xl mt-6 max-w-2xl mx-auto transition-all duration-1000 delay-500 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }`}
-          >
-            A journey through innovation, growth, and technical excellence
-          </p>
+          
+        
+      
         </div>
 
         {/* Experience Cards Grid */}
@@ -171,31 +154,16 @@ const Experience = () => {
                   style={{
                     background:
                       hoveredCard === index
-                        ? "linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(34,211,238,0.1) 50%, rgba(255,255,255,0.05) 100%)"
-                        : "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(34,211,238,0.05) 50%, rgba(255,255,255,0.05) 100%)",
+                        ? "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(34,211,238,0.1) 50%, rgba(255,255,255,0.010) 100%)"
+                        : "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(34,211,238,0.01) 50%, rgba(255,255,255,0.010) 100%)",
                     boxShadow:
                       hoveredCard === index
-                        ? "0 25px 50px -12px rgba(34, 211, 238, 0.25), 0 0 0 1px rgba(34, 211, 238, 0.1)"
+                        ? "0 25px 50px -12px rgba(34, 211, 238, 0.1), 0 0 0 1px rgba(34, 211, 238, 0.1)"
                         : "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
                   }}
                 >
-                  {/* Status Indicator */}
-                  <div className="absolute top-4 right-4">
-                    <div
-                      className={`w-3 h-3 rounded-full ${
-                        exp.status === "current"
-                          ? "bg-cyan-400 shadow-lg shadow-cyan-400/60 animate-pulse"
-                          : "bg-white shadow-lg shadow-white/30"
-                      }`}
-                      style={{
-                        boxShadow:
-                          exp.status === "current"
-                            ? "0 0 15px rgba(34, 211, 238, 0.8)"
-                            : "0 0 10px rgba(255, 255, 255, 0.5)",
-                      }}
-                    />
-                  </div>
-
+                 
+                  
                   {/* Content */}
                   <div className="space-y-6">
                     <div>
@@ -215,9 +183,7 @@ const Experience = () => {
                         <span
                           key={techIndex}
                           className="px-3 py-1 text-xs font-medium bg-white/10 text-cyan-200 rounded-full border border-cyan-400/30 hover:bg-cyan-400/20 hover:border-cyan-400/60 transition-all duration-300"
-                          style={{
-                            boxShadow: "0 0 10px rgba(34, 211, 238, 0.2)",
-                          }}
+                         
                         >
                           {tech}
                         </span>
@@ -225,26 +191,14 @@ const Experience = () => {
                     </div>
                   </div>
 
-                  {/* Hover Glow Effect */}
-                  <div
-                    className={`absolute inset-0 rounded-2xl transition-opacity duration-500 pointer-events-none ${
-                      hoveredCard === index ? "opacity-100" : "opacity-0"
-                    }`}
-                    style={{
-                      background: "linear-gradient(135deg, rgba(34,211,238,0.1) 0%, rgba(255,255,255,0.05) 100%)",
-                      filter: "blur(1px)",
-                    }}
-                  />
+                
 
                   {/* Corner Accent */}
                   <div
                     className={`absolute top-0 right-0 w-16 h-16 transition-opacity duration-500 ${
                       hoveredCard === index ? "opacity-100" : "opacity-0"
                     }`}
-                    style={{
-                      background: "linear-gradient(135deg, rgba(34,211,238,0.3) 0%, transparent 70%)",
-                      clipPath: "polygon(100% 0%, 0% 0%, 100% 100%)",
-                    }}
+                   
                   />
                 </div>
               </Tilt>
@@ -252,18 +206,7 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Bottom Decoration */}
-        {/* <div className="mt-20 text-center">
-          <div
-            className={`inline-flex items-center space-x-4 text-gray-400 transition-all duration-1000 delay-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }`}
-          >
-            <div className="w-12 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div> */}
-            <span className="text-sm font-medium text-cyan-200">Continuously Growing</span>
-            {/* <div className="w-12 h-px bg-gradient-to-l from-transparent via-cyan-400 to-transparent"></div>
-          </div>
-        </div> */}
+        
       </div>
 
      
