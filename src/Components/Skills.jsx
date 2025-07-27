@@ -21,16 +21,25 @@ const Skills = () => {
   return (
     <section
       ref={containerRef}
-      className="w-full h-[70vh] text-white py-12 px-16"
+      className="w-full h-[70vh] text-white py-12 pl-2 "
       id="skills"
     >
       <div className="w-[90%] bg-black-100 mx-auto">
-        <h2 className="text-5xl font-mono mb-8">SKILLS</h2>
-        <div className="flex flex-wrap gap-y-[7vh] gap-x-[7vh]">
+              <div className="text-center mb-20">
+          <h2
+            className={`text-7xl md:text-7xl font-mono font-bold bg-gradient-to-r text-white/80 mb-6 `}
+            style={{
+              letterSpacing: "-0.02em",
+            }}
+          >
+            SKILLS
+          </h2>
+        </div>
+        <div className="flex flex-wrap gap-y-[10vh] gap-x-[9vh]">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="media min-w-[150px] bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-xl shadow  flex flex-col items-center"
+              className = " min-w-[150px] bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-xl shadow  flex flex-col items-center hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={skill.img}

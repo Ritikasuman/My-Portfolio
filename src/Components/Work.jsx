@@ -30,9 +30,15 @@ const Work = () => {
   return (
     <section className="w-full pb-20 pt-20 h-60vh" id="work">
       <div className=" mr-[10%] ml-[8%]">
-        <h2 className="text-5xl font-mono text-white mb-10">
-        PROJECTS
-        </h2>
+         <div className="text-center mb-20">
+          <h2
+            className={`text-7xl md:text-7xl font-mono font-bold bg-gradient-to-r text-white/80 mb-6 `}
+            style={{
+              letterSpacing: "-0.02em",
+            }}
+          >
+            PROJECTS
+          </h2> </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 ">
           {projects.map((project, index) => (
             <div

@@ -39,9 +39,15 @@ const ExtraInfo = () => {
   return (
     <section className="w-full  h-[70vh] " id="extra-info">
       <div className="mr-[10%] ml-[8%] ">
-        <h2 className="text-5xl font-mono text-white mb-8">
-          More 
-        </h2>
+         <div className="text-center mb-20">
+          <h2
+            className={`text-7xl md:text-7xl font-mono font-bold bg-gradient-to-r text-white/80 mb-6 `}
+            style={{
+              letterSpacing: "-0.02em",
+            }}
+          >
+            EXPERIENCE
+          </h2> </div>
         <div className="flex  gap-[10%]">
           {extras.map((item, index) => (
            <div

@@ -2,9 +2,16 @@ const Contact = () => {
   return (
     <section className="w-full py-12 px-6 md:px-16" id="contact">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">
-          Contact Me
-        </h2>
+    <div className="text-center mb-20">
+          <h2
+            className={`text-7xl md:text-7xl font-mono font-bold bg-gradient-to-r text-white/80 mb-6 `}
+            style={{
+              letterSpacing: "-0.02em",
+            }}
+          >
+            CONTACT ME
+          </h2>
+          </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left side: contact info */}
