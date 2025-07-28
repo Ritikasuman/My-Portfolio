@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full h-[60vh] mt-[8%]" id="contact">
+    <section className="w-full h-[65vh] mt-[8%]" id="contact">
       <div className="">
         <div className="text-center mb-10">
           <h2
@@ -36,7 +36,7 @@ const Contact = () => {
             CONTACT ME
           </h2>
         </div>
-       <div className="bg-gray-500/10 m-[10%]">
+       <div className="bg-gray-400/10 backdrop-blur-sm  mx-[6%] mb-[5%] mt-[5%] p-[3%] rounded-xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left side */}
           <div className="space-y-4 text-gray-300">
@@ -58,26 +58,26 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="w-full border border-gray-300 p-3 rounded bg-transparent text-white placeholder-gray-400"
+                className="w-full border border-gray-300 p-3 rounded bg-transparent text-white placeholder-gray-300"
                 required
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                className="w-full border border-gray-300 p-3 rounded bg-transparent text-white placeholder-gray-400"
+                className="w-full border border-gray-300 p-3 rounded bg-transparent text-white placeholder-gray-300"
                 required
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
                 rows="4"
-                className="w-full border border-gray-300 p-3 rounded bg-transparent text-white placeholder-gray-400"
+                className="w-full border border-gray-300 p-3 rounded bg-transparent text-white placeholder-gray-300"
                 required
               ></textarea>
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-200"
+                className="bg-cyan-700 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition duration-200"
               >
                 Send Message
               </button>

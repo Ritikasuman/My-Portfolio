@@ -3,7 +3,7 @@ import { PiLinkedinLogoThin } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <footer className="bg-cyan-300/20 text-white py-6 mt-12">
+    <footer className="bg-cyan-300/40 text-white py-6 mt-12">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm">
         <p className="mb-2 md:mb-0">&copy; {new Date().getFullYear()} Ritika Suman. All rights reserved.</p>
         

@@ -5,10 +5,10 @@ import Tilt from "react-parallax-tilt";
 const experiences = [
   {
     title: "ReactJS Developer Intern | Vidhaalay Transforming Future LLP",
-    duration: "2025 – Present",
+    duration: "Jun 2025 – Aug 2025",
     description:
-      "Currently working as a ReactJS Developer Intern, contributing to frontend development and UI implementation using React and modern web technologies.",
-    tech: ["React", "JavaScript", "UI/UX"],
+      " worked as a ReactJS Developer Intern, contributing to frontend development and UI implementation using React and modern web technologies.",
+    tech: ["React", "JavaScript","Tailwind","HTML","CSS", "UI/UX"],
   },
   {
     title: "Intern | CodeUp",
@@ -21,8 +21,8 @@ const experiences = [
     title: "RHSCA & Cloud Computing Trainee | Grras Solutions",
     duration: "Jul 2024 – Aug 2024",
     description:
-      "Completed training with RedHat Global Certification. Gained hands-on experience with RedHat Linux, AWS basics, databases, containers, and DevOps tools through advanced project assignments.",
-    tech: ["RedHat", "AWS", "DevOps", "Docker"],
+      "Completed training on RedHat Linux . Gained hands-on experience with RedHat Linux, AWS basics, databases, containers, and DevOps tools through advanced project assignments.",
+    tech: ["RedHat", "AWS", "DevOps" , "Linux"],
   },
   {
     title: "Java Core Intern | Learn and Build",
@@ -36,7 +36,7 @@ const experiences = [
 const Experience = () => {
   return (
     <section
-      className="relative w-full h-[90vh] py-20 mb-10"
+      className="relative w-full h-[90vh] py-20 mb-5"
       id="experience"
     >
       <div className="" />
@@ -49,7 +49,7 @@ const Experience = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid xl:grid-cols-4  gap-[5%] ">
+        <div className="grid xl:grid-cols-4  gap-[3%] ">
           {experiences.map((exp, index) => (
             <div
               key={index}

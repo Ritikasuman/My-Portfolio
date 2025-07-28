@@ -8,10 +8,10 @@ const Intro = () => {
   return (
     <div
       className="flex h-[60vh] mt-15 mb-10 w-[90%] ml-[5%] rounded-3xl mr-[3%]
-           bg-neutral-600/10  backdrop-blur-lg text-white  shadow-xl shadow-black-800/30 hover:scale-104 transition-transform duration-800"
+           bg-gray-600/10  backdrop-blur-lg text-white  shadow-xl shadow-black-800/30 hover:scale-104 transition-transform duration-800"
     >
       {/* LEFT */}
-      <div className="left w-[55%] flex flex-col justify-center pr-10 pl-16 ">
+      <div className="left w-[65%] flex flex-col justify-center  pl-15 ">
         <h1 className="text-[7vh] font-mono">Ritika Suman</h1>
         <h4 className="text-[5vh] font-mono text-cyan-200 ">
           FULL STACK DEVELOPER
@@ -39,7 +39,7 @@ const Intro = () => {
       {/* RIGHT — animated */}
     
       <motion.div
-        className="ml-20 right w-[40%] h-full flex items-center justify-center "
+        className="ml-20 right w-[35%] h-full flex items-center justify-center "
         initial={{ y: 1000, opacity: 0 }} // ✅ Slide in from far right
         animate={{ y: 0, opacity: 1 }} // ✅ Ends at its original place
         transition={{ duration: 0.9, ease: "easeOut" }} // ✅ Smooth transition
@@ -51,9 +51,9 @@ const Intro = () => {
           glareMaxOpacity={0.0}
           scale={1.05}
           transitionSpeed={1000}
-          className="w-[60%] h-[75%]"
+          className="w-[70%] h-[80%]"
         >
-          <div className="w-full h-full bg-[url('../../assets/ProfileImg2.jpg')] bg-cover bg-center rounded-[10%] hover:scale-105 transition-transform duration-300"></div>
+          <div className="w-full h-full bg-[url('../../assets/ProfileImg2.jpg')] bg-cover bg-center rounded-[5%] hover:scale-105 transition-transform duration-300"></div>
         </Tilt>
       </motion.div>
     </div>

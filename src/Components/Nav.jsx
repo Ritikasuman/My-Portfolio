@@ -11,7 +11,7 @@ const Nav = () => {
       {/* Navigation Links */}
       <div className="flex space-x-10 items-center">
         <a
-          href="#home"
+          href="#"
           className="hover:text-cyan-400 cursor-pointer font-bold font-lucid"
         >
           Home
