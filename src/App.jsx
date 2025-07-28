@@ -7,7 +7,7 @@ import Work from "./Components/Work";
 import Extra from "./Components/Extra";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import TimelinePath from "./Components/TimelinePath";
+// import TimelinePath from "./Components/TimelinePath";
 
 function App() {
   return (

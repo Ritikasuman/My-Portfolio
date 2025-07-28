@@ -1,14 +1,15 @@
 "use client";
 
 import Tilt from "react-parallax-tilt";
+import SlideUpWrapper from "../Components/SlideUpWrapper";
 
 const experiences = [
   {
     title: "ReactJS Developer Intern | Vidhaalay Transforming Future LLP",
     duration: "Jun 2025 – Aug 2025",
     description:
-      " worked as a ReactJS Developer Intern, contributing to frontend development and UI implementation using React and modern web technologies.",
-    tech: ["React", "JavaScript","Tailwind","HTML","CSS", "UI/UX"],
+      "Worked as a ReactJS Developer Intern, contributing to frontend development and UI implementation using React and modern web technologies.",
+    tech: ["React", "JavaScript", "Tailwind", "HTML", "CSS", "UI/UX"],
   },
   {
     title: "Intern | CodeUp",
@@ -21,8 +22,8 @@ const experiences = [
     title: "RHSCA & Cloud Computing Trainee | Grras Solutions",
     duration: "Jul 2024 – Aug 2024",
     description:
-      "Completed training on RedHat Linux . Gained hands-on experience with RedHat Linux, AWS basics, databases, containers, and DevOps tools through advanced project assignments.",
-    tech: ["RedHat", "AWS", "DevOps" , "Linux"],
+      "Completed training on RedHat Linux. Gained hands-on experience with RedHat Linux, AWS basics, databases, containers, and DevOps tools through advanced project assignments.",
+    tech: ["RedHat", "AWS", "DevOps", "Linux"],
   },
   {
     title: "Java Core Intern | Learn and Build",
@@ -35,21 +36,17 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section
-      className="relative w-full h-[90vh] py-20 mb-5"
-      id="experience"
-    >
-      <div className="" />
-      <div className="ml-[6%] mr-[6%] ">
+    <SlideUpWrapper>
+      <section className="relative w-full min-h-[80vh] py-20 px-4 sm:px-8 md:px-20 mb-5" id="experience">
         {/* Title */}
-        <div className="text-center mb-25">
-          <h2 className="text-7xl md:text-7xl font-mono font-bold text-white/80 tracking-tight">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-mono font-bold text-white/80 tracking-tight">
             EXPERIENCE
           </h2>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid xl:grid-cols-4  gap-[3%] ">
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {experiences.map((exp, index) => (
             <div
               key={index}
@@ -71,14 +68,13 @@ const Experience = () => {
                 className="h-full"
               >
                 <div
-                  className="relative p-8 h-full rounded-2xl transition-all duration-500 cursor-pointer
+                  className="relative p-6 md:p-8 h-full rounded-2xl transition-all duration-500 cursor-pointer
                     bg-white/10 backdrop-blur-xl border border-white/20
                     hover:border-cyan-400/60 hover:shadow-sm hover:shadow-cyan-500/10"
                 >
-                  {/* Content */}
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-3 leading-tight ">
+                      <h3 className="text-lg md:text-xl font-bold text-white mb-3 leading-tight">
                         {exp.title}
                       </h3>
                       <p className="text-cyan-200 font-medium text-sm tracking-wide">
@@ -104,14 +100,13 @@ const Experience = () => {
                       ))}
                     </div>
                   </div>
-                 
                 </div>
               </Tilt>
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </SlideUpWrapper>
   );
 };
 
