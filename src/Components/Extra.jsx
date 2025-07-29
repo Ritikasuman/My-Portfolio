@@ -63,10 +63,7 @@ const Extra = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-16">
-            <h2
-              className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-mono font-bold text-white/80"
-            
-            >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-mono font-bold text-white/80">
               MORE ABOUT ME
             </h2>
           </div>
@@ -76,19 +73,19 @@ const Extra = () => {
             {extras.map((item, index) => (
               <div
                 key={index}
-                className="group relative rounded-xl shadow hover:shadow-xl transition-all duration-500 overflow-hidden"
+                className="group relative rounded-xl shadow hover:shadow-xl transition-all duration-500 overflow-hidden min-h-[420px] flex flex-col justify-between"
               >
                 {/* Background Sliding Reveal */}
                 <div className="absolute inset-0 bg-gray-100 translate-y-full group-hover:translate-y-0 transition-transform duration-1000 opacity-30 z-0"></div>
 
                 {/* Foreground Content */}
-                <div className="relative z-10 p-6 bg-white/10 backdrop-blur-xl border-2 border-dotted border-white/30 text-white min-h-[350px] flex flex-col justify-between">
+                <div className="relative z-10 p-6 bg-white/10 backdrop-blur-xl border-2 border-dotted border-white/30 text-white flex flex-col justify-between h-full rounded-xl">
                   {/* Image */}
-                  <div className="flex items-center justify-center mb-4">
+                  <div className="flex items-center justify-center mb-4 h-36">
                     <img
                       src={item.img}
                       alt={item.title}
-                      className="object-contain bg-white w-full max-h-36 rounded"
+                      className="object-contain bg-white w-full h-full rounded-lg"
                     />
                   </div>
 
@@ -138,7 +135,7 @@ const Extra = () => {
                     key={i}
                     src={cert}
                     alt={`Certificate ${i + 1}`}
-                    className="w-full h-auto rounded shadow-md border border-white/20 object-contain"
+                    className="w-full h-auto rounded-xl shadow-md border border-white/20 object-contain"
                   />
                 ))}
               </div>
