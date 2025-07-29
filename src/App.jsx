@@ -7,7 +7,7 @@ import Work from "./Components/Work";
 import Extra from "./Components/Extra";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-// import TimelinePath from "./Components/TimelinePath";
+import bgImg from "../assets/bgc3.png"; // ✅ imported background image
 
 function App() {
   return (
@@ -15,14 +15,13 @@ function App() {
       <div
         className="app-wrapper"
         style={{
-          backgroundImage: "url('./assets/bgc3.png')",
+          backgroundImage: `url(${bgImg})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
       >
-        {/* All sections scroll on top of this */}
         <Nav />
         <Intro />
         <AboutMe />

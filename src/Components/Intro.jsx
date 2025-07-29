@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import SlideUpWrapper from "../Components/SlideUpWrapper";
+import ProfileImg from "../../assets/ProfileImg2.jpg"; // ✅ Import image from src/assets
 
 const Intro = () => {
   return (
@@ -41,7 +42,7 @@ const Intro = () => {
           </div>
         </div>
 
-        {/* RIGHT — animated image */}
+        {/* RIGHT — imported image */}
         <motion.div
           className="w-full lg:w-[35%] flex items-center justify-center mt-5 lg:mt-0 mb-10 lg:mb-0"
           initial={{ y: 1000, opacity: 0 }}
@@ -57,7 +58,11 @@ const Intro = () => {
             transitionSpeed={1000}
             className="w-[70%] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[80%]"
           >
-            <div className="w-full h-full bg-[url('../../assets/ProfileImg2.jpg')] bg-cover bg-center rounded-[5%] hover:scale-105 transition-transform duration-300"></div>
+            <img
+              src={ProfileImg}
+              alt="Ritika Suman"
+              className="w-full h-full object-cover rounded-[5%] hover:scale-105 transition-transform duration-300"
+            />
           </Tilt>
         </motion.div>
       </div>

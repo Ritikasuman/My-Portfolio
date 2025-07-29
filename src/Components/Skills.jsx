@@ -1,19 +1,34 @@
 import { useRef } from "react";
 import SlideUpWrapper from "../Components/SlideUpWrapper";
 
+// ✅ Import images
+import html from "../../assets/html.png";
+import css from "../../assets/css-3.png";
+import js from "../../assets/js.png";
+import react from "../../assets/physics.png";
+import tailwind from "../../assets/Tailwind.png";
+import linux from "../../assets/linux.png";
+import java from "../../assets/java.png";
+import github from "../../assets/github.png";
+import vscode from "../../assets/logo.png";
+import c from "../../assets/letter-c.png";
+import mysql from "../../assets/mysql.png";
+import cpp from "../../assets/c-.png";
+
+// ✅ Use imported images in array
 const skills = [
-  { name: "HTML", img: "../../assets/html.png" },
-  { name: "CSS", img: "../../assets/css-3.png" },
-  { name: "JavaScript", img: "../../assets/js.png" },
-  { name: "React", img: "../../assets/physics.png" },
-  { name: "Tailwind", img: "../../assets/Tailwind.png" },
-  { name: "Linux", img: "../../assets/linux.png" },
-  { name: "Java", img: "../../assets/java.png" },
-  { name: "Github", img: "../../assets/github.png" },
-  { name: "Visual studio", img: "../../assets/logo.png" },
-  { name: "C", img: "../../assets/letter-c.png" },
-  { name: "MySql", img: "../../assets/mysql.png" },
-  { name: "C++", img: "../../assets/c-.png" },
+  { name: "HTML", img: html },
+  { name: "CSS", img: css },
+  { name: "JavaScript", img: js },
+  { name: "React", img: react },
+  { name: "Tailwind", img: tailwind },
+  { name: "Linux", img: linux },
+  { name: "Java", img: java },
+  { name: "Github", img: github },
+  { name: "Visual Studio", img: vscode },
+  { name: "C", img: c },
+  { name: "MySql", img: mysql },
+  { name: "C++", img: cpp },
 ];
 
 const Skills = () => {
@@ -45,7 +60,7 @@ const Skills = () => {
                 <img
                   src={skill.img}
                   alt={skill.name}
-                  className="w-20 h-20 object-contain mb-2 hover:scale-105 transition-transform duration-300"
+                  className="w-20 h-20 object-contain mb-2 hover:scale-120 transition-transform duration-300"
                 />
                 <p className="text-sm font-medium text-white/80 text-center">
                   {skill.name}
